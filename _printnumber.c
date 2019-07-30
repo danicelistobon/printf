@@ -8,7 +8,8 @@
 */
 int _printnumber(va_list argl)
 {
-	int num, count = 0;
+	int num, i = 1, count = 0;
+	unsigned int n;
 	char c;
 
 	num = va_arg(argl, int);
@@ -17,7 +18,13 @@ int _printnumber(va_list argl)
 	{
 		c = '-';
 		count = count + write(1, &c, 1);
+		n = -num;
 	}
+	else
+		n = num;
+
+	while (n / i > 9)
+		i *= 10;
 
 	return (count);
 }
