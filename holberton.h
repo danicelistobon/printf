@@ -11,5 +11,6 @@ int _putchar(char c);
 int _printf(const char *format, ...);
 int _printfaux(va_list argl, const char *format);
 int _printstring(va_list argl);
+int _printnumber(va_list argl);
 
 #endif
