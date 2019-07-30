@@ -26,5 +26,12 @@ int _printnumber(va_list argl)
 	while (n / i > 9)
 		i *= 10;
 
+	while (i != 0)
+	{
+		c = n / i + '0';
+		count = count + write(1, &c, 1);
+		n = n % i;
+		i = i / 10;
+	}
 	return (count);
 }
