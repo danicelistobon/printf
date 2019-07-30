@@ -33,6 +33,14 @@ int _printfaux(va_list argl, const char *format)
 				case '\0':
 					count = -2;
 					break;
+				case 'd':
+				case 'i':
+					count += _printnumber(argl);
+					count--, i++;
+					break;
+				default:
+					_putchar('%');
+					break;
 			}
 		}
 		else
