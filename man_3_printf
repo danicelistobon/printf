@@ -1,0 +1,31 @@
+.TH _printf 1 "30 July 2019" "0.1" "Holberton man page"
+.SH NAME
+_printf, _printfaux, _printstring, _putchar, _printnumbers
+.SH SYNOPSIS
+.B #include "holberton.h"
+
+.B int _printf(const char *format, ...);
+.br
+.B int _printfaux(va_list argl, const char *format);
+.br
+.B int _printstring(va_list argl);
+.br
+.B int _printnumbers(va_list arg);
+.br
+.B int putchar(char c);
+.SH DESCRIPTION
+The functions in the _printf() family produce output according to a format as describe below, _printfaux is a auxiliary function that compares the input with the cases and return according the cases, _printstring return the number of characters of string, _printnumbers if the number to compare is negative print '-' followed by de number or print normally if is positive, _putchar write the character c to stdout
+.SH CONVERSION SPECIFIERS
+A character that specifies the type of conversion to be applied.
+.br
+The conversion specifiers and their meanings are:
+
+c	The int argument is converted to a char and resulting character is written.
+
+s	The char* argument is expected to be a pointer to an array("pointer to a string") and characters on array are written.
+
+%	A '%' is written. No argument is converted. The complete conversion specification is '%%'
+
+i, d 	The argument is written on base 10
+.SH RETURN VALUE
+These functions return the number of characters printed (excluding the null byte used to end output to string). if an output error is encountered, a negative value is returned
