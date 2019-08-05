@@ -2,24 +2,35 @@
 
 # _Printf
 
-The  functions in the _printf() family produce output according to a format as describe below, _printfaux is a auxiliary function that compares the input with the cases and return according the cases, _printstring  return the  number  of characters of string, _printnumbers if the number to compare is negative print '-' followed by the number or print normally if is positive, _putchar write the character c to stdout.
+_Printf is a function developed by us, based on the printf function of the standard library <stdio.h>
+It is a variadic function, which means that it receives an indeterminate number of arguments.
+_Printf analyses the input, prints and returns the number of characters printed.
 
-## Synopsis
+## Files
 
-_printf, _printfaux, _printstring, _printnumbers, _putchar
+### _printf, _printfaux, _printstring, _printnumbers, _putchar
 
 ```
-#include holberton.h
+_printfaux   is a auxiliary function that compares the input with
+the cases and return according the cases.
 
-   int _printf(const char *format, ...);
+_printstring   return the  number  of characters of string.
 
-   int _printfaux(va_list argl, const char *format);
+_printnumbers   if the number to compare is negative print '-'
+followed by the number or print normally if is positive.
 
-   int _printstring(va_list argl);
+_putchar   write the character c to stdout.
+```
 
-   int _printnumbers(va_list arg);
+## Compilation
 
-   int _putchar(char c);
+This code will be compiled this way:
+```
+$ gcc -Wall -Werror -Wextra -pedantic *.c
+```
+This code will be executed this way:
+```
+$ ./printf
 ```
 ## Conversion specifiers
 
