@@ -1,4 +1,4 @@
-.TH _printf 1 "30 July 2019" "danicelistobon && Alafresh" "Holberton man page"
+.TH _printf 3 "30 July 2019" "danicelistobon && Alafresh" "Holberton Man Page - User Commands"
 .SH NAME
 _printf, _printfaux, _printstring, _putchar, _printnumbers
 .SH SYNOPSIS
@@ -38,8 +38,6 @@ This code will be executed this way:
 
 .B $ ./printf
 
-.SH BUGS
-Try to don't break my code please >:(
 .SH EXAMPLES
 len = _printf("Let's try to printf a simple sentence.\n");
 .br
