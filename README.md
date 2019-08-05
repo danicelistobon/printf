@@ -26,7 +26,7 @@ _putchar   write the character c to stdout.
 
 This code will be compiled this way:
 ```
-$ gcc -Wall -Werror -Wextra -pedantic *.c
+$ gcc -Wall -Wextra -Werror -pedantic -Wno-format *.c
 ```
 This code will be executed this way:
 ```
